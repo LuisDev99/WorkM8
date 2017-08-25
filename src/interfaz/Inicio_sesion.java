@@ -1,12 +1,21 @@
 
 package interfaz;
 
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
 
 public class Inicio_sesion extends javax.swing.JFrame {
+    public  ArrayList <String> usuarios = new ArrayList<>();
+    public  ArrayList <String> contrasenas = new ArrayList<>();
+    public static String posicion;
+    public static boolean verificador = false;
+    public static boolean verificador1 = false;
 
     
     public Inicio_sesion() {
         initComponents();
+        
     }
 
     
@@ -14,26 +23,18 @@ public class Inicio_sesion extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         Iniciar_Sesion = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        Nom_Usuario = new javax.swing.JTextField();
-        Contraseña = new javax.swing.JPasswordField();
+        Uname = new javax.swing.JTextField();
+        Pword = new javax.swing.JPasswordField();
         jLabel7 = new javax.swing.JLabel();
         Registrarse = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-
-        jLabel3.setText("jLabel3");
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaz/Zzz.png"))); // NOI18N
-        jLabel2.setText("adasdas");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(java.awt.SystemColor.activeCaptionText);
+        setIconImages(null);
         setUndecorated(true);
 
         jPanel2.setLayout(null);
@@ -60,16 +61,16 @@ public class Inicio_sesion extends javax.swing.JFrame {
         jLabel6.setText("Contraseña:");
         jPanel2.add(jLabel6);
         jLabel6.setBounds(50, 190, 70, 20);
-        jPanel2.add(Nom_Usuario);
-        Nom_Usuario.setBounds(130, 160, 130, 20);
+        jPanel2.add(Uname);
+        Uname.setBounds(130, 160, 130, 20);
 
-        Contraseña.addActionListener(new java.awt.event.ActionListener() {
+        Pword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ContraseñaActionPerformed(evt);
+                PwordActionPerformed(evt);
             }
         });
-        jPanel2.add(Contraseña);
-        Contraseña.setBounds(130, 190, 130, 20);
+        jPanel2.add(Pword);
+        Pword.setBounds(130, 190, 130, 20);
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
@@ -79,45 +80,70 @@ public class Inicio_sesion extends javax.swing.JFrame {
 
         Registrarse.setText("Regístrate");
         Registrarse.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Registrarse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegistrarseActionPerformed(evt);
+            }
+        });
         jPanel2.add(Registrarse);
         Registrarse.setBounds(130, 300, 130, 30);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaz/Zzz - Copy.png"))); // NOI18N
-        jPanel2.add(jLabel1);
-        jLabel1.setBounds(30, 0, 360, 370);
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaz/nautica-color-azul_1209457.jpg"))); // NOI18N
-        jLabel8.setText("jLabel8");
-        jPanel2.add(jLabel8);
-        jLabel8.setBounds(10, 0, 370, 370);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(1, 1, 1)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 389, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 378, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 381, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 403, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContraseñaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ContraseñaActionPerformed
+    private void PwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PwordActionPerformed
+        
+    }//GEN-LAST:event_PwordActionPerformed
 
     private void Iniciar_SesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Iniciar_SesionActionPerformed
-        // TODO add your handling code here:
+        
+        for(int x = 0 ; x<usuarios.size();x++){
+         if(Uname.getText().equals(usuarios.get(x)) && Pword.getText().equals(contrasenas.get(x))){
+              verificador = true;
+              
+            }
+           break;
+          }
+          
+           if(verificador == true){
+               Registrarse id = new Registrarse();
+               id.setVisible(true);
+               this.dispose();
+               
+               
+           }
+           
+          
+          else{
+             JOptionPane.showMessageDialog(this,"Contrasena Incorrecta");
+          }
+          
+        
+          
+      
+     
+      
     }//GEN-LAST:event_Iniciar_SesionActionPerformed
+
+    private void RegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarseActionPerformed
+               Registrarse id = new Registrarse();
+               id.setVisible(true);
+               this.dispose();
+    }//GEN-LAST:event_RegistrarseActionPerformed
       
     public static void main(String args[]) {
         
@@ -129,17 +155,16 @@ public class Inicio_sesion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPasswordField Contraseña;
     private javax.swing.JButton Iniciar_Sesion;
-    private javax.swing.JTextField Nom_Usuario;
+    private javax.swing.JPasswordField Pword;
     private javax.swing.JButton Registrarse;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JTextField Uname;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
+ 
+
+   
 }
