@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 public class interdazdef extends javax.swing.JFrame {
   
          Classes clak = new Classes();
-    
+    ;
     
     /**
      * Creates new form interdazdef
