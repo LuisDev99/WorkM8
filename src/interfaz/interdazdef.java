@@ -39,15 +39,14 @@ public class interdazdef extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButton1 = new javax.swing.JButton();
         jLabellanguage = new javax.swing.JLabel();
         jLabelname = new javax.swing.JLabel();
         jLabelperfilfoto = new javax.swing.JLabel();
-        jButtonfindwork = new javax.swing.JButton();
         jButtonfriends = new javax.swing.JButton();
         jButtonmessages = new javax.swing.JButton();
         jButtoncontact = new javax.swing.JButton();
         jButtonoptions = new javax.swing.JButton();
-        jButtonbackwards = new javax.swing.JButton();
         jLabelsummary = new javax.swing.JLabel();
         jLabelgrama = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -78,6 +77,15 @@ public class interdazdef extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/back.png"))); // NOI18N
+        jButton1.setContentAreaFilled(false);
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 80));
+
         jLabellanguage.setFont(new java.awt.Font("Bebas", 1, 24)); // NOI18N
         jLabellanguage.setText("Languages");
         getContentPane().add(jLabellanguage, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 580, -1, -1));
@@ -95,27 +103,26 @@ public class interdazdef extends javax.swing.JFrame {
         jLabelperfilfoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/profilepicgrande.png"))); // NOI18N
         getContentPane().add(jLabelperfilfoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 40, -1, -1));
 
-        jButtonfindwork.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Picture11.png"))); // NOI18N
-        jButtonfindwork.setBorder(null);
-        jButtonfindwork.setBorderPainted(false);
-        jButtonfindwork.setContentAreaFilled(false);
-        jButtonfindwork.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonfindworkActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButtonfindwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 470, 70, 40));
-
         jButtonfriends.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/friends.png"))); // NOI18N
         jButtonfriends.setBorder(null);
         jButtonfriends.setBorderPainted(false);
         jButtonfriends.setContentAreaFilled(false);
+        jButtonfriends.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonfriendsMouseClicked(evt);
+            }
+        });
         getContentPane().add(jButtonfriends, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 470, -1, 40));
 
         jButtonmessages.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/message.png"))); // NOI18N
         jButtonmessages.setBorder(null);
         jButtonmessages.setBorderPainted(false);
         jButtonmessages.setContentAreaFilled(false);
+        jButtonmessages.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonmessagesMouseClicked(evt);
+            }
+        });
         getContentPane().add(jButtonmessages, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 470, 70, 40));
 
         jButtoncontact.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/infouser.png"))); // NOI18N
@@ -139,17 +146,6 @@ public class interdazdef extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButtonoptions, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 0, 50, 60));
-
-        jButtonbackwards.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/back.png"))); // NOI18N
-        jButtonbackwards.setBorder(null);
-        jButtonbackwards.setBorderPainted(false);
-        jButtonbackwards.setContentAreaFilled(false);
-        jButtonbackwards.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonbackwardsActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButtonbackwards, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 60, 60));
 
         jLabelsummary.setFont(new java.awt.Font("Bebas", 1, 24)); // NOI18N
         jLabelsummary.setText(" summary");
@@ -262,17 +258,6 @@ public class interdazdef extends javax.swing.JFrame {
         // TODO add your handling code here  
     }//GEN-LAST:event_jButtoninfooActionPerformed
 
-    private void jButtonbackwardsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonbackwardsActionPerformed
-        Inicio_sesion2 nombre2 = new Inicio_sesion2();
-        nombre2.setVisible(true);
-        this.dispose();
-        
-    }//GEN-LAST:event_jButtonbackwardsActionPerformed
-
-    private void jButtonfindworkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonfindworkActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonfindworkActionPerformed
-
     private void jButtonoptionsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonoptionsMouseClicked
       Configuracion abrir = new Configuracion();
       abrir.setVisible(true);
@@ -299,6 +284,24 @@ public class interdazdef extends javax.swing.JFrame {
     private void jButtoninfooMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtoninfooMouseClicked
         JOptionPane.showMessageDialog(this, "ZEPENOOB");
     }//GEN-LAST:event_jButtoninfooMouseClicked
+
+    private void jButtonmessagesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonmessagesMouseClicked
+        Mensajes abrir5 = new Mensajes();
+        abrir5.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButtonmessagesMouseClicked
+
+    private void jButtonfriendsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonfriendsMouseClicked
+        Amigos abrir6 = new Amigos();
+        abrir6.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButtonfriendsMouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+       MAIN_APP hola = new MAIN_APP();
+       hola.setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -336,9 +339,8 @@ public class interdazdef extends javax.swing.JFrame {
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonbackwards;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtoncontact;
-    private javax.swing.JButton jButtonfindwork;
     private javax.swing.JButton jButtonfriends;
     private javax.swing.JButton jButtoninfoo;
     private javax.swing.JButton jButtonmessages;

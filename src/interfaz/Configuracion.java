@@ -5,6 +5,9 @@
  */
 package interfaz;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author User
@@ -53,6 +56,11 @@ public class Configuracion extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton5.setText("Salir y Guardar");
+        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton5MouseClicked(evt);
+            }
+        });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 730, 120, 30));
 
         jButton1.setText("Cerrar Sesión");
@@ -65,6 +73,11 @@ public class Configuracion extends javax.swing.JFrame {
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/back.png"))); // NOI18N
         jButton4.setContentAreaFilled(false);
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 110, 70));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -116,7 +129,6 @@ public class Configuracion extends javax.swing.JFrame {
         jLabel8.setText("Foto de Perfil");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 530, 130, 30));
 
-        jButton2.setBackground(new java.awt.Color(110, 196, 243));
         jButton2.setText("Cambiar");
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
@@ -128,7 +140,7 @@ public class Configuracion extends javax.swing.JFrame {
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 602, 150, 30));
 
         jButton3.setText("cambiar");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 600, -1, 30));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 600, 80, 30));
 
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -147,9 +159,16 @@ public class Configuracion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        Inicio_sesion2 cerrar = new Inicio_sesion2();
-        cerrar.setVisible(true);
-        this.dispose();
+        this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        String ObjButtons[] = {"Yes","No"};
+        int PromptResult = JOptionPane.showOptionDialog(null,"Estas seguro que quieres cerrar sesion?","Confirmar",JOptionPane.DEFAULT_OPTION,JOptionPane.WARNING_MESSAGE,null,ObjButtons,ObjButtons[1]);
+        if(PromptResult==JOptionPane.YES_OPTION)
+        {
+             Inicio_sesion2 cerrar = new Inicio_sesion2(); 
+             cerrar.setVisible(true);
+             this.dispose();
+        }
+       
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
@@ -159,6 +178,18 @@ public class Configuracion extends javax.swing.JFrame {
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
+        interdazdef abrir = new interdazdef();
+        abrir.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton5MouseClicked
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+       interdazdef abrir = new interdazdef();
+        abrir.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton4MouseClicked
 
     /**
      * @param args the command line arguments

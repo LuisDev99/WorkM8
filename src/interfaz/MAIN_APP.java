@@ -5,6 +5,8 @@
  */
 package interfaz;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author sanch
@@ -130,6 +132,11 @@ public class MAIN_APP extends javax.swing.JFrame {
         getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 150, 150, 50));
 
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/APPLY.png"))); // NOI18N
+        jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel20MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 620, -1, -1));
 
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/GUGULPLACE.png"))); // NOI18N
@@ -166,11 +173,21 @@ public class MAIN_APP extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Sugarpunch DEMO", 0, 24)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("NOTIFICATIONS");
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel12MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 50, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Sugarpunch DEMO", 0, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("MY PROFILE");
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Sugarpunch DEMO", 0, 24)); // NOI18N
@@ -180,11 +197,15 @@ public class MAIN_APP extends javax.swing.JFrame {
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Sugarpunch DEMO", 2, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("pOPULAR jOBS AROUND YOU");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 310, 90));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/APPLY.png"))); // NOI18N
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 330, 310, 140));
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
@@ -212,6 +233,27 @@ public class MAIN_APP extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        interdazdef abrir3 = new interdazdef();
+        abrir3.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+       Mensajes abrir4 = new Mensajes();
+       abrir4.setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_jLabel12MouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+       JOptionPane.showMessageDialog(this, "Request Sent");
+       
+    }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
+       JOptionPane.showMessageDialog(this, "Request Sent");
+    }//GEN-LAST:event_jLabel20MouseClicked
 
     /**
      * @param args the command line arguments

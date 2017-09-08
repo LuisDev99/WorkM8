@@ -147,7 +147,7 @@ public class Inicio_sesion2 extends javax.swing.JFrame {
         
        
        if(verificador == true){
-               interdazdef id = new interdazdef ();
+           MAIN_APP id = new MAIN_APP ();
            id.setVisible(true);
            this.dispose();
        }
