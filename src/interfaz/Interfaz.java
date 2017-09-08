@@ -10,7 +10,7 @@ package interfaz;
  * @author Eduardo Zepeda
  */
 public class Interfaz {
-
+;
     /**
      * @param args the command line arguments
      */
