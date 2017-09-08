@@ -157,15 +157,16 @@ public class Classes {
         public Boolean verificar_login (String user, String pass){
             getfile();
             get_password();
-            Boolean sexo = false;
+            Boolean verificador = false;
          for(int x=0;x<get_usuario_from_file.size();x++){
            if(get_usuario_from_file.get(x).equals(user)&&(get_contrasenas_from_file.get(x).equals(pass))){
-               sexo = true;
+               verificador = true;
+               
                
                break;
            }
         } 
-         return sexo;
+         return verificador;
          
         }
         
