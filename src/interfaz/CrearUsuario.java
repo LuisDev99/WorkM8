@@ -147,7 +147,7 @@ Classes CrearUsuario = new Classes();
                         }
             }
                 
-             if(User_verifier==true){
+             if(User_verifier==true && textfield1.getText().length()>0&& Contra1.getText().length()>0&& Contra2.getText().length()>0){
                 if(Contra1.getText().equals(Contra2.getText())){
       
                     registrar.usuarios.add(textfield1.getText());

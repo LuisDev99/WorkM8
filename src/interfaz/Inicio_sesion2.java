@@ -28,6 +28,7 @@ public class Inicio_sesion2 extends javax.swing.JFrame {
      */
     public Inicio_sesion2() {
         initComponents();
+        
     }
     
 
@@ -40,35 +41,44 @@ public class Inicio_sesion2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         Uname = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        Pword = new javax.swing.JPasswordField();
+        jLabel6 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        Pword = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Username");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, -1, -1));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/wm8whit.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 730, 250));
 
+        Uname.setBackground(new java.awt.Color(4, 31, 50));
+        Uname.setFont(new java.awt.Font("Sugarpunch DEMO", 2, 48)); // NOI18N
+        Uname.setForeground(new java.awt.Color(204, 204, 204));
+        Uname.setText("User NAme:");
+        Uname.setBorder(null);
+        Uname.setHighlighter(null);
+        Uname.setOpaque(false);
+        Uname.setVerifyInputWhenFocusTarget(false);
         Uname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UnameActionPerformed(evt);
             }
         });
-        getContentPane().add(Uname, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 80, -1));
+        getContentPane().add(Uname, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 280, 510, 50));
 
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Password");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, -1));
-        getContentPane().add(Pword, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 80, -1));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lineaoass.png"))); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 510, 30));
 
-        jButton1.setText("Log in");
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/loginsketch.png"))); // NOI18N
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -79,20 +89,44 @@ public class Inicio_sesion2 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 520, 310, 140));
 
-        jButton2.setText("Sign up");
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/signupblue.png"))); // NOI18N
+        jButton2.setBorderPainted(false);
+        jButton2.setContentAreaFilled(false);
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 640, 310, 130));
 
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Aun no tienes cuenta? Registrate");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, -1, -1));
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 300));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lineaoass.png"))); // NOI18N
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 460, 520, 10));
+
+        Pword.setBackground(new java.awt.Color(4, 31, 50));
+        Pword.setFont(new java.awt.Font("Sugarpunch DEMO", 2, 48)); // NOI18N
+        Pword.setForeground(new java.awt.Color(204, 204, 204));
+        Pword.setText("Password:");
+        Pword.setBorder(null);
+        Pword.setOpaque(false);
+        Pword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PwordActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Pword, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 400, 310, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/bgchiq.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 720, 680, 80));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/bgchiq.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 720, 350, 80));
+
+        jLabel5.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spike.png"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 730));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -137,6 +171,10 @@ public class Inicio_sesion2 extends javax.swing.JFrame {
        this.dispose();
     }//GEN-LAST:event_jButton2MouseClicked
 
+    private void PwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PwordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PwordActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -173,13 +211,15 @@ public class Inicio_sesion2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPasswordField Pword;
+    private javax.swing.JTextField Pword;
     private javax.swing.JTextField Uname;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     // End of variables declaration//GEN-END:variables
 }
