@@ -22,6 +22,8 @@ public class interdazdef extends javax.swing.JFrame {
      */
     
     public interdazdef() {
+        
+      
        
         
         initComponents();
@@ -277,9 +279,9 @@ public class interdazdef extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonfindworkActionPerformed
 
     private void jButtonoptionsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonoptionsMouseClicked
-      // Fruits id = new Fruits();
-        //id.setVisible(true);
-        //this.dispose();
+      Configuracion abrir = new Configuracion();
+      abrir.setVisible(true);
+      this.dispose();
     }//GEN-LAST:event_jButtonoptionsMouseClicked
 
     private void jButtonoptionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonoptionsActionPerformed
@@ -287,9 +289,11 @@ public class interdazdef extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonoptionsActionPerformed
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-   
-       // jLabelname.setText(clak.display);
-        //JOptionPane.showMessageDialog(this, clak.display);
+        
+        
+     
+            
+      
     }//GEN-LAST:event_formWindowActivated
 
     private void jLabelnameMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelnameMouseEntered
