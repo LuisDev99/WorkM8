@@ -27,7 +27,9 @@ public class interdazdef extends javax.swing.JFrame {
        
         
         initComponents();
-       
+   
+      
+      name.setText(clak.display.toString());
     }
 
     /**
@@ -39,13 +41,12 @@ public class interdazdef extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        name = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabellanguage = new javax.swing.JLabel();
-        jLabelname = new javax.swing.JLabel();
         jLabelperfilfoto = new javax.swing.JLabel();
         jButtonfriends = new javax.swing.JButton();
         jButtonmessages = new javax.swing.JButton();
-        jButtoncontact = new javax.swing.JButton();
         jButtonoptions = new javax.swing.JButton();
         jLabelsummary = new javax.swing.JLabel();
         jLabelgrama = new javax.swing.JLabel();
@@ -54,8 +55,8 @@ public class interdazdef extends javax.swing.JFrame {
         jTextArea2 = new javax.swing.JTextArea();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jLabelline2 = new javax.swing.JLabel();
         jButtoninfoo = new javax.swing.JButton();
+        jLabelline2 = new javax.swing.JLabel();
         jLabelexperience = new javax.swing.JLabel();
         jLabelskills = new javax.swing.JLabel();
         jLabelinf1 = new javax.swing.JLabel();
@@ -77,7 +78,19 @@ public class interdazdef extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        name.setBackground(new java.awt.Color(255, 255, 255));
+        name.setFont(new java.awt.Font("Bebas", 1, 36)); // NOI18N
+        name.setText("ric");
+        name.setOpaque(true);
+        name.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                nameMouseEntered(evt);
+            }
+        });
+        getContentPane().add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 290, 50));
+
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/back.png"))); // NOI18N
+        jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -89,16 +102,6 @@ public class interdazdef extends javax.swing.JFrame {
         jLabellanguage.setFont(new java.awt.Font("Bebas", 1, 24)); // NOI18N
         jLabellanguage.setText("Languages");
         getContentPane().add(jLabellanguage, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 580, -1, -1));
-
-        jLabelname.setBackground(new java.awt.Color(255, 255, 255));
-        jLabelname.setFont(new java.awt.Font("Bebas", 1, 36)); // NOI18N
-        jLabelname.setOpaque(true);
-        jLabelname.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabelnameMouseEntered(evt);
-            }
-        });
-        getContentPane().add(jLabelname, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 320, 290, 50));
 
         jLabelperfilfoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/profilepicgrande.png"))); // NOI18N
         getContentPane().add(jLabelperfilfoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 40, -1, -1));
@@ -112,7 +115,7 @@ public class interdazdef extends javax.swing.JFrame {
                 jButtonfriendsMouseClicked(evt);
             }
         });
-        getContentPane().add(jButtonfriends, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 470, -1, 40));
+        getContentPane().add(jButtonfriends, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 470, -1, 40));
 
         jButtonmessages.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/message.png"))); // NOI18N
         jButtonmessages.setBorder(null);
@@ -123,13 +126,7 @@ public class interdazdef extends javax.swing.JFrame {
                 jButtonmessagesMouseClicked(evt);
             }
         });
-        getContentPane().add(jButtonmessages, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 470, 70, 40));
-
-        jButtoncontact.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/infouser.png"))); // NOI18N
-        jButtoncontact.setBorder(null);
-        jButtoncontact.setBorderPainted(false);
-        jButtoncontact.setContentAreaFilled(false);
-        getContentPane().add(jButtoncontact, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 460, 70, 50));
+        getContentPane().add(jButtonmessages, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 470, 70, 40));
 
         jButtonoptions.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/options.png"))); // NOI18N
         jButtonoptions.setBorder(null);
@@ -152,7 +149,7 @@ public class interdazdef extends javax.swing.JFrame {
         getContentPane().add(jLabelsummary, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 560, -1, -1));
 
         jLabelgrama.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/bg verde.jpg"))); // NOI18N
-        getContentPane().add(jLabelgrama, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -100, 1030, -1));
+        getContentPane().add(jLabelgrama, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -80, 1030, -1));
 
         jScrollPane3.setBorder(null);
 
@@ -191,9 +188,6 @@ public class interdazdef extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 600, 350, 230));
 
-        jLabelline2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Picture12.png"))); // NOI18N
-        getContentPane().add(jLabelline2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 510, 150, 10));
-
         jButtoninfoo.setBackground(new java.awt.Color(255, 255, 255));
         jButtoninfoo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/info.png"))); // NOI18N
         jButtoninfoo.setBorder(null);
@@ -209,7 +203,10 @@ public class interdazdef extends javax.swing.JFrame {
                 jButtoninfooActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtoninfoo, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 180, -1, -1));
+        getContentPane().add(jButtoninfoo, new org.netbeans.lib.awtextra.AbsoluteConstraints(921, 270, 80, -1));
+
+        jLabelline2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Picture12.png"))); // NOI18N
+        getContentPane().add(jLabelline2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 510, 150, 10));
 
         jLabelexperience.setFont(new java.awt.Font("Bebas", 1, 24)); // NOI18N
         jLabelexperience.setText("Education");
@@ -270,19 +267,18 @@ public class interdazdef extends javax.swing.JFrame {
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         
-        
-     
+
+     name.setText(clak.get_usuario_from_file.get(clak.pos));
             
       
     }//GEN-LAST:event_formWindowActivated
 
-    private void jLabelnameMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelnameMouseEntered
-        //
-        //
-    }//GEN-LAST:event_jLabelnameMouseEntered
+    private void nameMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nameMouseEntered
+     
+    }//GEN-LAST:event_nameMouseEntered
 
     private void jButtoninfooMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtoninfooMouseClicked
-        JOptionPane.showMessageDialog(this, "ZEPENOOB");
+        JOptionPane.showMessageDialog(this, "You can change your profile settings by clicking the options button");
     }//GEN-LAST:event_jButtoninfooMouseClicked
 
     private void jButtonmessagesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonmessagesMouseClicked
@@ -334,13 +330,14 @@ public class interdazdef extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new interdazdef().setVisible(true);
+                
             }
         });
+       
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButtoncontact;
     private javax.swing.JButton jButtonfriends;
     private javax.swing.JButton jButtoninfoo;
     private javax.swing.JButton jButtonmessages;
@@ -358,7 +355,6 @@ public class interdazdef extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelline2;
     private javax.swing.JLabel jLabellineaverde;
     private javax.swing.JLabel jLabellines;
-    private javax.swing.JLabel jLabelname;
     private javax.swing.JLabel jLabelperfilfoto;
     private javax.swing.JLabel jLabelskills;
     private javax.swing.JLabel jLabelsummary;
@@ -368,5 +364,6 @@ public class interdazdef extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JLabel name;
     // End of variables declaration//GEN-END:variables
 }

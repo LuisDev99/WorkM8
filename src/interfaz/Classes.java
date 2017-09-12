@@ -22,7 +22,8 @@ import javax.swing.JOptionPane;
 public class Classes {
     public  ArrayList<String> get_usuario_from_file = new ArrayList<String>(); 
     public  ArrayList<String> get_contrasenas_from_file = new ArrayList<String>();
-    public String display;
+    public  String display = "Ri";
+    public int pos;
     
     public  void CrearUsuario(){
     
@@ -155,14 +156,15 @@ public class Classes {
             } 
         }
         public Boolean verificar_login (String user, String pass){
+            Inicio_sesion2 inicio = new Inicio_sesion2();
             getfile();
             get_password();
             Boolean verificador = false;
          for(int x=0;x<get_usuario_from_file.size();x++){
            if(get_usuario_from_file.get(x).equals(user)&&(get_contrasenas_from_file.get(x).equals(pass))){
                verificador = true;
-               
-               
+                pos = x;
+               display = get_usuario_from_file.get(x);
                break;
            }
         } 

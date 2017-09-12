@@ -8,10 +8,9 @@ package interfaz;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author User
- */
+
+
+
 public class Inicio_sesion2 extends javax.swing.JFrame {
  public  ArrayList <String> usuarios = new ArrayList<>();
     public  ArrayList <String> contrasenas = new ArrayList<>();
@@ -19,8 +18,9 @@ public class Inicio_sesion2 extends javax.swing.JFrame {
     boolean verificador = false;
     boolean verificador1 = false;
     public int temp =0; 
-    
 
+    
+   
     Classes cla = new Classes();
  
     /**
@@ -31,7 +31,8 @@ public class Inicio_sesion2 extends javax.swing.JFrame {
         
     }
     
-
+    interdazdef interfaz = new interdazdef();
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -41,42 +42,44 @@ public class Inicio_sesion2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel4 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         Uname = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
         Pword = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/wm8whit.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 730, 250));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/WORKMATEACTUALIZADO/NOTIENES CUENTA_.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 640, -1, 40));
 
-        Uname.setBackground(new java.awt.Color(4, 31, 50));
-        Uname.setFont(new java.awt.Font("Sugarpunch DEMO", 2, 48)); // NOI18N
-        Uname.setForeground(new java.awt.Color(204, 204, 204));
-        Uname.setText("User NAme:");
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/WORKMATEACTUALIZADO/LINEADIVISORA.png"))); // NOI18N
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 520, 10));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/WORKMATEACTUALIZADO/WORKM(LOGOOO.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 760, 160));
+
+        Uname.setFont(new java.awt.Font("Trebuchet MS", 0, 48)); // NOI18N
+        Uname.setForeground(new java.awt.Color(0, 0, 0));
+        Uname.setText("ENTER USERNAME");
         Uname.setBorder(null);
-        Uname.setHighlighter(null);
         Uname.setOpaque(false);
-        Uname.setVerifyInputWhenFocusTarget(false);
         Uname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UnameActionPerformed(evt);
             }
         });
-        getContentPane().add(Uname, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 280, 510, 50));
+        getContentPane().add(Uname, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, 380, 50));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lineaoass.png"))); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 510, 30));
-
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/loginsketch.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/WORKMATEACTUALIZADO/BOTONLOGIN.png"))); // NOI18N
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -89,9 +92,9 @@ public class Inicio_sesion2 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 520, 310, 140));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 400, 510, 140));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/signupblue.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/WORKMATEACTUALIZADO/REGISTRTATE.png"))); // NOI18N
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -99,15 +102,11 @@ public class Inicio_sesion2 extends javax.swing.JFrame {
                 jButton2MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 640, 310, 130));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 630, 200, 50));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lineaoass.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 460, 520, 10));
-
-        Pword.setBackground(new java.awt.Color(4, 31, 50));
-        Pword.setFont(new java.awt.Font("Sugarpunch DEMO", 2, 48)); // NOI18N
-        Pword.setForeground(new java.awt.Color(204, 204, 204));
-        Pword.setText("Password:");
+        Pword.setFont(new java.awt.Font("Trebuchet MS", 0, 48)); // NOI18N
+        Pword.setForeground(new java.awt.Color(0, 0, 0));
+        Pword.setText("ENTER PASSWORD");
         Pword.setBorder(null);
         Pword.setOpaque(false);
         Pword.addActionListener(new java.awt.event.ActionListener() {
@@ -115,18 +114,23 @@ public class Inicio_sesion2 extends javax.swing.JFrame {
                 PwordActionPerformed(evt);
             }
         });
-        getContentPane().add(Pword, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 400, 310, -1));
+        getContentPane().add(Pword, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 330, 390, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/bgchiq.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 720, 680, 80));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/WORKMATEACTUALIZADO/ICONOUSER.png"))); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/bgchiq.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 720, 350, 80));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/WORKMATEACTUALIZADO/ICONO CONTRA.png"))); // NOI18N
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 320, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/WORKMATEACTUALIZADO/TEXTBOXUSERYPASS.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/WORKMATEACTUALIZADO/SLASHLOGIN.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 930, 700));
 
         jLabel5.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spike.png"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 730));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/WORKMATEACTUALIZADO/BACLGROUNGLOGIN.png"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 930, 700));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -139,7 +143,11 @@ public class Inicio_sesion2 extends javax.swing.JFrame {
       cla.getfile();
       usuarios.addAll(cla.get_usuario_from_file);
       contrasenas.addAll(cla.get_contrasenas_from_file);
-    verificador = cla.verificar_login(Uname.getText(), Pword.getText());
+      verificador = cla.verificar_login(Uname.getText(), Pword.getText());
+      
+     
+      
+    
         
        
     /*
@@ -218,8 +226,10 @@ public class Inicio_sesion2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     // End of variables declaration//GEN-END:variables
 }

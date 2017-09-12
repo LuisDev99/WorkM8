@@ -81,11 +81,11 @@ public class MAIN_APP extends javax.swing.JFrame {
         getContentPane().add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 20, 20, 20));
 
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/CHIQUTIA.png"))); // NOI18N
-        getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 10, 90, 80));
+        getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 10, 100, 80));
 
         jLabel33.setForeground(new java.awt.Color(255, 255, 255));
         jLabel33.setText("Conectado");
-        getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 20, 60, 20));
+        getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 20, 70, 20));
 
         jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spike.png"))); // NOI18N
         getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 0, 220, 100));
@@ -194,7 +194,7 @@ public class MAIN_APP extends javax.swing.JFrame {
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 180, -1, -1));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/blurry_blue_background-wallpaper-2560x1600.jpg"))); // NOI18N
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, -10, 220, 750));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, -10, 220, 760));
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Sugarpunch DEMO", 0, 24)); // NOI18N
@@ -248,15 +248,15 @@ public class MAIN_APP extends javax.swing.JFrame {
         jLabel8.setOpaque(true);
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 850, 280));
 
-        jLabel22.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel22.setBackground(new java.awt.Color(204, 204, 255));
         jLabel22.setOpaque(true);
-        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 890, 670));
+        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 900, 670));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/COSAROJAPARAELHOME.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 110, 130));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/asdasd.PNG"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 880, 80));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 890, 80));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
