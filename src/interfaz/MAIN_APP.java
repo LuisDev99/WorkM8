@@ -29,6 +29,11 @@ public class MAIN_APP extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel35 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -68,11 +73,33 @@ public class MAIN_APP extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel35.setText("Escriba un mensaje");
+        getContentPane().add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 60, -1, -1));
+
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Imagen1.png"))); // NOI18N
+        getContentPane().add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 20, 20, 20));
+
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/CHIQUTIA.png"))); // NOI18N
+        getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 10, 90, 80));
+
+        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel33.setText("Conectado");
+        getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 20, 60, 20));
+
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spike.png"))); // NOI18N
+        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 0, 220, 100));
+
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/MACQUI.png"))); // NOI18N
         getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 110, 100));
 
         jTextField1.setBorder(null);
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 70, 150, 30));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 180, 150, 30));
 
         jScrollPane2.setBorder(null);
 
@@ -99,12 +126,12 @@ public class MAIN_APP extends javax.swing.JFrame {
         jLabel24.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
         jLabel24.setText("JOB");
-        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 260, -1, -1));
+        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 310, -1, -1));
 
         jLabel25.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(255, 255, 255));
         jLabel25.setText("JOB");
-        getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 330, -1, -1));
+        getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 360, -1, -1));
 
         jLabel26.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
@@ -129,7 +156,7 @@ public class MAIN_APP extends javax.swing.JFrame {
         jLabel23.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
         jLabel23.setText("RESTAURANTS");
-        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 150, 150, 50));
+        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 220, 150, 50));
 
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/APPLY.png"))); // NOI18N
         jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -153,21 +180,21 @@ public class MAIN_APP extends javax.swing.JFrame {
         jLabel30.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
         jLabel30.setText("jLabel30");
-        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 220, -1, -1));
+        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 270, -1, -1));
 
         jLabel19.setFont(new java.awt.Font("Sugarpunch DEMO", 0, 36)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("CATEGORIES");
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 10, 200, 50));
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 120, 200, 50));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/PUTAMIERDADEMAC.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 330, 180));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ASDASDASDAS.png"))); // NOI18N
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 60, -1, -1));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 180, -1, -1));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/blurry_blue_background-wallpaper-2560x1600.jpg"))); // NOI18N
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, -10, 230, 750));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, -10, 220, 750));
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Sugarpunch DEMO", 0, 24)); // NOI18N
@@ -229,7 +256,7 @@ public class MAIN_APP extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 110, 130));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/asdasd.PNG"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 80));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 880, 80));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -254,6 +281,10 @@ public class MAIN_APP extends javax.swing.JFrame {
     private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
        JOptionPane.showMessageDialog(this, "Request Sent");
     }//GEN-LAST:event_jLabel20MouseClicked
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -315,6 +346,11 @@ public class MAIN_APP extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
